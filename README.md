@@ -4,6 +4,11 @@ A comprehensive template for getting started with Context Engineering - the disc
 
 > **Context Engineering is 10x better than prompt engineering and 100x better than vibe coding.**
 
+## 🎗️ Purpose
+
+The purpose of this repository/exercise is to develop a modular, reusable workflow orchestration framework that leverages AI-assisted coding agents. The design follows a specification-driven approach inspired by agent-os, incorporates robust project and task management, and uses Archon’s RAG to access the knowledge base. Subagents handle deep research, while large language models assist with code extraction and example curation. Tool invocations—whether functions, skills, slash commands, or other components—must be orchestrated through the MCP and called only when needed to maintain efficiency.
+
+
 ## 🚀 Quick Start
 
 ```bash
