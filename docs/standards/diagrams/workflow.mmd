@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Dev as Developer
+    participant Arch as Archon MCP
+    participant Serena as Serena MCP
+    Dev->>Arch: list tasks
+    Arch->>Dev: current task
+    Dev->>Arch: update status to doing
+    Dev->>Arch: perform RAG/query
+    Dev->>Serena: implement changes via symbols
+    Serena->>Dev: results
+    Dev->>Arch: update status to review
+    Arch->>Dev: next task
