@@ -1,0 +1,9 @@
+flowchart LR
+    U[Developer / Agent] -->|define task| A[Archon MCP]
+    A -->|RAG + examples| R[Knowledge Base]
+    A -->|task status| T[Task Queue]
+    A -->|invoke| S[Serena MCP]
+    S -->|symbol search/edits| C[Codebase / Repo]
+    C -->|results| S
+    S -->|update progress| A
+    A -->|review status| U
