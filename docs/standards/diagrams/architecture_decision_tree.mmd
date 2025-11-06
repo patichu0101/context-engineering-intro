@@ -1,0 +1,9 @@
+flowchart TD
+    Start["Start new dev session"] --> CheckArch["Archon available?"]
+    CheckArch -->|Yes| UseArch["Use Archon for tasks"]
+    CheckArch -->|No| Stop["Stop: Cannot proceed without Archon"]
+    UseArch --> Research["Perform RAG queries"]
+    Research --> Code["Use Serena for code edits"]
+    Code --> Push["Update task status"]
+    Push --> Review["Mark review/done"]
+    Review --> End["End session"]
