@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> todo
+    todo --> doing: start
+    doing --> review: implementation complete
+    review --> done: validated
+    review --> doing: changes requested
+    todo --> [*]: archived/cancelled
+    done --> [*]
